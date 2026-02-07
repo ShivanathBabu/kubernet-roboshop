@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: ebs-claim
+  name: roboshop-ebs
 spec:
   accessModes:
     - ReadWriteOnce
