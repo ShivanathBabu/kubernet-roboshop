@@ -57,7 +57,7 @@ spec:
   selector:
     purpose: efs-static
     project: roboshop
-  port:
+  ports:
     - protocol: TCP
       port: 80
       targetPort: 80
