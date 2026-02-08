@@ -39,12 +39,12 @@ spec:
         - name: cart
           image: shivanathbabu/cart:v1
           resources:
-          requests:
-            cpu: "50m"
-            memory: "128Mi"
-          limits:
-            cpu: "100m"
-            memory: "256Mi"
+            requests:
+              cpu: "50m"
+              memory: "128Mi"
+            limits:
+              cpu: "100m"
+              memory: "256Mi"
           envFrom:
           - configMapRef:
               name: cart
@@ -87,3 +87,5 @@ spec:
       target:
         type: Utilization
         averageUtilization: 10
+---
+
