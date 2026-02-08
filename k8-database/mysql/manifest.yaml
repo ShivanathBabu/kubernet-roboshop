@@ -34,7 +34,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mysql-headless
+  name: mysql
   namespace: roboshop
   labels:
     component: mysql-headless
