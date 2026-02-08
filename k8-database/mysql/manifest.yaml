@@ -4,7 +4,7 @@ metadata:
   name: mysql
   namespace: roboshop
   labels:
-    component: mysql
+    component: mysql-headless
     project: roboshop
     tier: app
 type: Opaque
@@ -23,7 +23,7 @@ metadata:
 spec:
   clusterIP: None
   selector:
-    component: mysql
+    component: mysql-headless
     project: roboshop
     tier: database
   ports:
@@ -42,7 +42,7 @@ metadata:
     tier: database
 spec:
   selector:
-    component: mysql
+    component: mysql-headless
     project: roboshop
     tier: database
   ports:
