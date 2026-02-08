@@ -72,7 +72,7 @@ spec:
         tier: database # has to match .spec.selector.matchLabels
     spec:
       containers:
-      - name: nginx
+      - name: mysql
         image: shivanathbabu/mysql:v1
         envFrom:
         - secretRef:
