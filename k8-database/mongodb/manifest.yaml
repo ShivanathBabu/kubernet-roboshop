@@ -13,7 +13,7 @@ spec:
     component: mongodb
     project: roboshop
     tier: database
-  port:
+  ports:
   - protocol: TCP
     port: 27017
     targetPort: 27017
@@ -32,7 +32,7 @@ spec:
     component: mongodb
     project: roboshop
     tier: database
-  port:
+  ports:
   - protocol: TCP
     port: 27017
     targetPort: 27017
