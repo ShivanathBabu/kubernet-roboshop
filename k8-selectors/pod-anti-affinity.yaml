@@ -19,15 +19,16 @@ metadata:
     purpose: pod-anti-affinity
 spec:
    affinity:
-    podAntiAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
-      - labelSelector:
-          matchExpressions:
-          - key: app-name
-            operator: In
-            values:
-            - pod-1
-        topologyKey: "kubernetes.io/hostname"
-    containers:
-    - name: pod-2
-      image: nginx
+      podAntiAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+        - labelSelector:
+            matchExpressions:
+            - key: app-name
+              operator: In
+              values:
+              - pod-1
+          topologyKey: "kubernetes.io/hostname"
+      containers:
+      - name: pod-2
+        image: nginx
+  
