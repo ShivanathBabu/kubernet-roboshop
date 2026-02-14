@@ -20,7 +20,7 @@ metadata:
 spec:
   affinity:
     podAntiAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
+        requiredDuringSchedulingIgnoredDuringExecution:
         - labelSelector:
             matchExpressions:
             - key: app-name
