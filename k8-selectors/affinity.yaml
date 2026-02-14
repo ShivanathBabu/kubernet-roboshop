@@ -8,10 +8,10 @@ spec:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
-          - key: topology.kubernetes.io/zone
+          - key: hardware
             operator: In
             values:
             - gpu
   containers:
   - name: with-node-affinity
-    image: registry.k8s.io/pause:3.8
+    image: nginx
