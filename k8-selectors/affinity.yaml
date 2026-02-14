@@ -11,8 +11,7 @@ spec:
           - key: topology.kubernetes.io/zone
             operator: In
             values:
-            - antarctica-east1
-            - antarctica-west1
+            - gpu
   containers:
   - name: with-node-affinity
     image: registry.k8s.io/pause:3.8
