@@ -7,5 +7,5 @@ metadata:
     purpose: pod-anti-affinity
 spec:
   containers:
-    name: pod-1
+  - name: pod-1
     image: nginx
