@@ -52,7 +52,7 @@ metadata:
     project: roboshop
     tier: database
 spec:
-  type: Loadbalancer
+  type: LoadBalancer
   selector:
     project: roboshop
     tier: database
