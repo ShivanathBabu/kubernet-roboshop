@@ -34,7 +34,7 @@ metadata:
     tier: database
 spec:
   nodeselector:
-    topology.kubernetes.io/zone=us-east-1c
+    topology.kubernetes.io/zone: us-east-1c
   containers:
   - name: app
     image: nginx
