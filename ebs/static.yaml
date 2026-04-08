@@ -32,6 +32,8 @@ metadata:
   labels:
     project: roboshop-ebs
 spec:
+  nodeSelector:
+    topology.kubernetes.io/zone: us-east-1f
   containers:
   - name: app
     image: nginx
