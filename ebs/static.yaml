@@ -41,7 +41,7 @@ spec:
   volumes:
   - name: persistent-storage
     persistentVolumeClaim:
-      claimName: ebs-claim
+      claimName: roboshop-claim
 ---
 apiVersion: v1
 kind: Service
