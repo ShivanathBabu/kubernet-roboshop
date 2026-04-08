@@ -17,7 +17,7 @@ metadata:
   name: efs-app
   labels:
     project: roboshop
-    tier: databas
+    tier: database
 spec:
   containers:
     - name: app
