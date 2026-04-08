@@ -9,8 +9,14 @@ spec:
   - name: nginx
     image: nginx
     imagePullPolicy: Always
+  nodeSelector:
+    disktype: ssd
   tolerations:
   -  key: "value1"
      operator: "Equal"
      value: "value1"
      effect: "NoSchedule"
+  -  key: "value1"
+     operator: "Equal"
+     value: "value1"
+     effect: "NoExecute"
