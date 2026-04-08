@@ -45,8 +45,8 @@ spec:
 ---
 apiVersion: v1
 kind: Service
-metadta: 
-  name: ebs-Service
+metadata: 
+  name: ebs-service
   labels:
     project: roboshop-ebs
 spec: 
