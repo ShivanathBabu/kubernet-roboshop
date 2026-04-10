@@ -21,7 +21,7 @@ spec:
   affinity:
     podAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
-        labelSelector:
+      - labelSelector:
           matchExpressions:
           - key: app-name
             operator: Exists
@@ -29,5 +29,5 @@ spec:
             - pod-1
         topologyKey: "kubernetes.io/hostname"
   containers:
-    name: pod-2
+  - name: pod-2
     image: nginx    
