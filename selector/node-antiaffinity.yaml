@@ -11,7 +11,7 @@ spec:
           - key: hardware
             operator: NotIn
             values:
-            - gpu
+            - ssd
   containers:
   - name: with-pod-affinity
     image: nginx
