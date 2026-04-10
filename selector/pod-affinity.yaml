@@ -16,18 +16,18 @@ metadata:
   name: pod-2
   labels:
     app-name: pod-2
-    puprose: pod-affinity
+    purpose: pod-affinity
 spec:
-   affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-          - labelSelector:
-              matchExpressions:
-              - key: app
-                operator: In
-                values:
-                - store
-            topologyKey: "kubernetes.io/hostname"
-containers:
-- name: pod-2
-  image: nginx    
+  affinity:
+    podAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+      - labelSelector:
+          matchExpressions:
+          - key: app-name
+            operator: In
+            values:
+            - pod-1
+        topologyKey: "kubernetes.io/hostname"
+  containers:
+  - name: pod-2
+    image: nginx
