@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: "{{ .values.StatefulSet.image}}:{{ .values.StatefulSet.imageversion}}"
+        image: "{{ .Values.statefulset.image}}:{{ .Values.statefulset.imageversion}}"
         volumeMounts:
         - name: mongodb
           mountPath: /data/db
@@ -24,6 +24,7 @@ spec:
       name: mongodb
     spec:
       accessModes: [ "ReadWriteOnce" ]
+      storageClassName: "roboshop-sc"
       resources:
         requests:
           storage: 2Gi
