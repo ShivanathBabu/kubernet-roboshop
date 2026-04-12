@@ -1,0 +1,3 @@
+StatefulSet:
+  image: rabbitmq
+  imageversion: 3

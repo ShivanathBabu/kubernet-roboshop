@@ -1,0 +1,3 @@
+StatefulSet:
+  image: shivanathbabu/mongodb
+  imageversion: v1

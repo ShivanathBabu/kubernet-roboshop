@@ -1,0 +1,6 @@
+Deployment:
+  image: shivanathbabu/catalogue
+  imageversion: v1
+hpa:
+  maxReplicas: 10
+  averageUtilization: 50

@@ -1,0 +1,3 @@
+StatefulSet:
+  image: shivanathbabu/mysql
+  version: v1
